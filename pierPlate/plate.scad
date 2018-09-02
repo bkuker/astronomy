@@ -3,16 +3,17 @@ $fn=50;
 
 holeDepth = 15;
 holeDia = 32;
-holeDist = 60;
-rod = 12.5;
+holeDist = 66;
+rod = 16;
 t = 5;
 
-slotDia = 10;
-slotLen = 50;
-slotDist = 25;
+slotDia = 13;
+slotLen = 40;
+slotDist = 30;
 
 centerDia = 10;
 
+projection(cut=true){
 difference(){
     union(){
         cylinder(h=t,d=180);
@@ -61,5 +62,6 @@ difference(){
             }
         }
     }
+}
 }
 
